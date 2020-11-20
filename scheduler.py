@@ -16,6 +16,8 @@ client = pymongo.MongoClient(MONGO_URL)
 db = client["badnews"]
 collection = db["articles"]
 
+# analyzes news
+
 
 def analyze_news():
     data = {}
