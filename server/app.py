@@ -13,13 +13,14 @@ db = client["badnews"]
 collection = db["articles"]
 
 # initialize Flask application
-app = Flask(__name__)
+
+app = Flask(__name__, static_folder='../client/dist/',    static_url_path='/')
 
 
 CORS(app, resources={r'/*': {'origins': '*'}})
 
 
-@app.route("/", methods=["GET"])
+@app.route("/article", methods=["GET"])
 def entry():
     data = collection.find_one(
         sort=[('_id', pymongo.DESCENDING)]
