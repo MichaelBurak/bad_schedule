@@ -4,11 +4,13 @@ chardet==3.0.4
 click==7.1.2
 dnspython==2.0.0
 Flask==1.1.2
+Flask-Cors==3.0.9
 Flask-RESTful==0.3.8
 idna==2.10
 itsdangerous==1.1.0
 Jinja2==2.11.2
 joblib==0.17.0
+jsonify==0.5
 MarkupSafe==1.1.1
 nltk==3.5
 pymongo==3.11.1
