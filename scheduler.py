@@ -38,4 +38,4 @@ def analyze_news():
 
 
 if __name__ == "__main__":
-    job()
+    analyze_news()
